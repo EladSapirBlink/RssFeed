@@ -11,7 +11,6 @@ def generate_items():
         items.append(f"""  <item>
     <title>Feed Update {i + 1}</title>
     <description>Updated at {iso}</description>
-    <pubDate>{pub_date}</pubDate>
     <guid>{guid}</guid>
   </item>""")
     return "\n".join(items)
