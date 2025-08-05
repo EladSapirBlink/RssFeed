@@ -50,7 +50,7 @@ def main():
         "title": f"Test News {len(items)+1}",
         "pubDate": now,
         "description": f"This is test news item generated at {now}",
-        "link": f"https://EladSapirBlink.github.io/test-rss-feed/test-news-{len(items)+1}"
+        "link": f"https://eladsapirblink.github.io/test-rss-feed/test-news-{len(items)+1}"
     }
     items.insert(0, new_item)
     items = items[:MAX_ITEMS]
