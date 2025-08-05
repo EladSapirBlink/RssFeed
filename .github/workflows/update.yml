@@ -1,12 +1,12 @@
 name: Update RSS Feed
 
+on:
+  workflow_dispatch:
+
 permissions:
   contents: write
-
-on:
-  schedule:
-    - cron: "*/1 * * * *"  # every 1 minute
-  workflow_dispatch:
+  pages: write
+  id-token: write
 
 jobs:
   update:
@@ -20,15 +20,36 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Generate RSS Feed
-        run: python feed_generator.py
-
-      - name: Commit and push
+      - name: Continuous Update Loop (30s)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add feed.xml feed_items.json
-          git commit -m "Update RSS feed" || echo "No changes"
-          git push
+          for i in {1..1000}
+          do
+            echo "Iteration $i: Generating feed..."
+            python feed_generator.py
+
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add feed.xml feed_items.json
+            git commit -m "Update RSS feed" || echo "No changes"
+            git push
+
+            echo "Sleeping for 30 seconds..."
+            sleep 30
+          done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
