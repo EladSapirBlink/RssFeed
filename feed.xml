@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-  <title>My Simple Feed</title>
+  <title>My Test Feed</title>
   <link>https://eladsapirblink.github.io/RssFeed/feed.xml</link>
-  <description>RSS feed that updates every minute.</description>
+  <description>RSS feed with mixed valid and invalid events.</description>
   <item>
-    <title>Feed Update 1</title>
-    <description>Updated at 2025-08-05T12:49:57.470592Z</description>
-    <guid>update-1754398197</guid>
+    <title>Good Event 1</title>
+    <description>Updated at 2025-08-05T12:56:01.112847Z</description>
+    <pubDate>Tue, 05 Aug 2025 12:56:01 +0000</pubDate>
+    <guid>good-1754398561</guid>
   </item>
   <item>
-    <title>Feed Update 2</title>
-    <description>Updated at 2025-08-05T12:49:27.470592Z</description>
-    <guid>update-1754398167</guid>
+    <title>Good Event 2</title>
+    <description>Updated at 2025-08-05T12:55:31.112847Z</description>
+    <pubDate>Tue, 05 Aug 2025 12:55:31 +0000</pubDate>
+    <guid>good-1754398531</guid>
   </item>
   <item>
-    <title>Feed Update 3</title>
-    <description>Updated at 2025-08-05T12:48:57.470592Z</description>
-    <guid>update-1754398137</guid>
+    <title>Good Event 3</title>
+    <description>Updated at 2025-08-05T12:55:01.112847Z</description>
+    <pubDate>Tue, 05 Aug 2025 12:55:01 +0000</pubDate>
+    <guid>good-1754398501</guid>
   </item>
   <item>
-    <title>Feed Update 4</title>
-    <description>Updated at 2025-08-05T12:48:27.470592Z</description>
-    <guid>update-1754398107</guid>
+    <title>Invalid PubDate Event 1</title>
+    <description>Updated at 2025-08-05T12:54:31.112847Z</description>
+    <pubDate>LALALALA</pubDate>
+    <guid>invalid-pubdate-1754398471</guid>
   </item>
   <item>
-    <title>Feed Update 5</title>
-    <description>Updated at 2025-08-05T12:47:57.470592Z</description>
-    <guid>update-1754398077</guid>
+    <title>Invalid PubDate Event 2</title>
+    <description>Updated at 2025-08-05T12:54:01.112847Z</description>
+    <pubDate>LALALALA</pubDate>
+    <guid>invalid-pubdate-1754398441</guid>
   </item>
   <item>
-    <title>Feed Update 6</title>
-    <description>Updated at 2025-08-05T12:47:27.470592Z</description>
-    <guid>update-1754398047</guid>
+    <title>Invalid PubDate Event 3</title>
+    <description>Updated at 2025-08-05T12:53:31.112847Z</description>
+    <pubDate>LALALALA</pubDate>
+    <guid>invalid-pubdate-1754398411</guid>
   </item>
   <item>
-    <title>Feed Update 7</title>
-    <description>Updated at 2025-08-05T12:46:57.470592Z</description>
-    <guid>update-1754398017</guid>
+    <title>No PubDate Event 1</title>
+    <description>Updated at 2025-08-05T12:53:01.112847Z</description>
+    <guid>no-pubdate-1754398381</guid>
   </item>
   <item>
-    <title>Feed Update 8</title>
-    <description>Updated at 2025-08-05T12:46:27.470592Z</description>
-    <guid>update-1754397987</guid>
+    <title>No PubDate Event 2</title>
+    <description>Updated at 2025-08-05T12:52:31.112847Z</description>
+    <guid>no-pubdate-1754398351</guid>
   </item>
   <item>
-    <title>Feed Update 9</title>
-    <description>Updated at 2025-08-05T12:45:57.470592Z</description>
-    <guid>update-1754397957</guid>
-  </item>
-  <item>
-    <title>Feed Update 10</title>
-    <description>Updated at 2025-08-05T12:45:27.470592Z</description>
-    <guid>update-1754397927</guid>
+    <title>No PubDate Event 3</title>
+    <description>Updated at 2025-08-05T12:52:01.112847Z</description>
+    <guid>no-pubdate-1754398321</guid>
   </item>
 </channel>
 </rss>
