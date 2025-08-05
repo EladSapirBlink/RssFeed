@@ -16,7 +16,7 @@ def read_existing_items():
                     "title": title,
                     "pubDate": timestamp,
                     "description": f"This is {title} generated at {timestamp}",
-                    "link": f"https://your-username.github.io/test-rss-feed/{title.replace(' ', '_')}"
+                    "link": f"https://eladsapirblink.github.io/RssFeed/{title.replace(' ', '_')}"
                 })
     return items
 
@@ -29,7 +29,7 @@ def generate_feed(items):
     rss = Element('rss', version='2.0')
     channel = SubElement(rss, 'channel')
     SubElement(channel, 'title').text = "Test Feed"
-    SubElement(channel, 'link').text = "https://your-username.github.io/test-rss-feed/feed.xml"
+    SubElement(channel, 'link').text = "https://eladsapirblink.github.io/RssFeed/feed.xml"
     SubElement(channel, 'description').text = "Auto-generated test news feed"
 
     for item in items:
@@ -50,7 +50,7 @@ def main():
         "title": f"Test News {len(items)+1}",
         "pubDate": now,
         "description": f"This is test news item generated at {now}",
-        "link": f"https://eladsapirblink.github.io/test-rss-feed/test-news-{len(items)+1}"
+        "link": f"https://eladsapirblink.github.io/RssFeed/test-news-{len(items)+1}"
     }
     items.insert(0, new_item)
     items = items[:MAX_ITEMS]
