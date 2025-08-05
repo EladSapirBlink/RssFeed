@@ -1,5 +1,8 @@
 name: Update RSS Feed
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "*/1 * * * *"  # every 1 minute
