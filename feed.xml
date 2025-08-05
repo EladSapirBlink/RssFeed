@@ -3,14 +3,21 @@
 <channel>
   <title>My Simple Feed</title>
   <link>https://eladsapirblink.github.io/RssFeed/feed.xml</link>
-  <description>A simple RSS feed that updates every minute.</description>
+  <description>A simple RSS feed that updates every minute with the last 50 updates.</description>
   
-<item>
-  <title>Feed Update</title>
-  <description>Updated at 2025-08-05T09:14:43.729024Z</description>
-  <pubDate>Tue, 05 Aug 2025 09:14:43 +0000</pubDate>
-  <guid>update-1754385283.729107</guid>
-</item>
+  <item>
+    <title>Feed Update</title>
+    <description>Updated at 2025-08-05T09:31:17.402130Z</description>
+    <pubDate>Tue, 05 Aug 2025 09:31:17 +0000</pubDate>
+    <guid>update-1754386277</guid>
+  </item>
+
+  <item>
+    <title>Feed Update</title>
+    <description>Updated at 2025-08-05T09:28:38.987069Z</description>
+    <pubDate>Tue, 05 Aug 2025 09:28:38 +0000</pubDate>
+    <guid>update-1754386118</guid>
+  </item>
 
 </channel>
 </rss>
