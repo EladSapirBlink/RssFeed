@@ -1,15 +1,19 @@
-name: Update RSS Feed
+name: Generate and Deploy RSS Feed
 
 on:
+  push:
+    branches: [main]
   schedule:
-    - cron: "*/1 * * * *"  # every 1 minute
-  workflow_dispatch:
+    - cron: "*/1 * * * *"  # Every 1 minute
+  workflow_dispatch:       # Allows manual runs too
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -20,7 +24,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Generate RSS Feed
+      - name: Generate feed.xml
         run: python feed_generator.py
 
       - name: Commit and push
@@ -32,3 +36,12 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubu
