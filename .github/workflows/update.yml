@@ -5,7 +5,7 @@ on:
     branches: [main]
   schedule:
     - cron: "*/1 * * * *"  # Every 1 minute
-  workflow_dispatch:       # Allows manual runs too
+  workflow_dispatch:       # Allows manual runs tooo
 
 permissions:
   contents: write
