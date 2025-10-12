@@ -6,54 +6,54 @@
   <description>RSS feed with mixed valid and invalid events.</description>
   <item>
     <title>Good Event 1</title>
-    <description>Updated at 2025-10-12T13:21:36.539367Z</description>
-    <pubDate>Sun, 12 Oct 2025 13:21:36 +0000</pubDate>
-    <guid>good-1760275296</guid>
+    <description>Updated at 2025-10-12T13:35:22.383524Z</description>
+    <pubDate>Sun, 12 Oct 2025 13:35:22 +0000</pubDate>
+    <guid>good-1760276122</guid>
   </item>
   <item>
     <title>Good Event 2</title>
-    <description>Updated at 2025-10-12T13:21:06.539367Z</description>
-    <pubDate>Sun, 12 Oct 2025 13:21:06 +0000</pubDate>
-    <guid>good-1760275266</guid>
+    <description>Updated at 2025-10-12T13:34:52.383524Z</description>
+    <pubDate>Sun, 12 Oct 2025 13:34:52 +0000</pubDate>
+    <guid>good-1760276092</guid>
   </item>
   <item>
     <title>Good Event 3</title>
-    <description>Updated at 2025-10-12T13:20:36.539367Z</description>
-    <pubDate>Sun, 12 Oct 2025 13:20:36 +0000</pubDate>
-    <guid>good-1760275236</guid>
+    <description>Updated at 2025-10-12T13:34:22.383524Z</description>
+    <pubDate>Sun, 12 Oct 2025 13:34:22 +0000</pubDate>
+    <guid>good-1760276062</guid>
   </item>
   <item>
     <title>Invalid PubDate Event 1</title>
-    <description>Updated at 2025-10-12T13:20:06.539367Z</description>
+    <description>Updated at 2025-10-12T13:33:52.383524Z</description>
     <pubDate>LALALALA</pubDate>
-    <guid>invalid-pubdate-1760275206</guid>
+    <guid>invalid-pubdate-1760276032</guid>
   </item>
   <item>
     <title>Invalid PubDate Event 2</title>
-    <description>Updated at 2025-10-12T13:19:36.539367Z</description>
+    <description>Updated at 2025-10-12T13:33:22.383524Z</description>
     <pubDate>LALALALA</pubDate>
-    <guid>invalid-pubdate-1760275176</guid>
+    <guid>invalid-pubdate-1760276002</guid>
   </item>
   <item>
     <title>Invalid PubDate Event 3</title>
-    <description>Updated at 2025-10-12T13:19:06.539367Z</description>
+    <description>Updated at 2025-10-12T13:32:52.383524Z</description>
     <pubDate>LALALALA</pubDate>
-    <guid>invalid-pubdate-1760275146</guid>
+    <guid>invalid-pubdate-1760275972</guid>
   </item>
   <item>
     <title>No PubDate Event 1</title>
-    <description>Updated at 2025-10-12T13:18:36.539367Z</description>
-    <guid>no-pubdate-1760275116</guid>
+    <description>Updated at 2025-10-12T13:32:22.383524Z</description>
+    <guid>no-pubdate-1760275942</guid>
   </item>
   <item>
     <title>No PubDate Event 2</title>
-    <description>Updated at 2025-10-12T13:18:06.539367Z</description>
-    <guid>no-pubdate-1760275086</guid>
+    <description>Updated at 2025-10-12T13:31:52.383524Z</description>
+    <guid>no-pubdate-1760275912</guid>
   </item>
   <item>
     <title>No PubDate Event 3</title>
-    <description>Updated at 2025-10-12T13:17:36.539367Z</description>
-    <guid>no-pubdate-1760275056</guid>
+    <description>Updated at 2025-10-12T13:31:22.383524Z</description>
+    <guid>no-pubdate-1760275882</guid>
   </item>
 </channel>
 </rss>
